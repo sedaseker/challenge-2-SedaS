@@ -1,0 +1,155 @@
+/* OPMAAK LAYOUT PAGINA */
+.container{
+	display: grid;
+	grid-template-areas:
+		"groet"
+		"tijd"
+		"dag"
+		"zin"
+		"ochtendeen";
+}
+
+.hoi{
+	grid-area: groet;
+	font-size: 40px;
+	font-family: Calibri;
+	position: relative;
+	text-align: center;
+}
+
+.time{
+	grid-area: tijd;
+	font-size: 85px;
+	font-family: Calibri;
+	margin: 0px;
+}
+
+.dag{
+	grid-area: dag;
+	font-size: 30px;
+	font-family: Avenir;
+	margin: 0px;
+	margin-top: 20px;
+}
+
+.zin{
+	grid-area: zin;
+	font-size: 40px;
+	font-family: Avenir;
+}
+
+.ochtend1{
+	grid-area: ochtendeen;
+}
+
+
+body{
+	font-family: avenir;
+	text-align: center;
+}
+
+.foto{
+	width: 91%;
+	padding: 4%;
+	margin-top: 4%;
+	
+}
+
+/* RESPONSIVE CODE LAYOUT*/
+
+@media only screen and (min-width: 500px) {
+	.container{
+		grid-template-areas:
+			"groet"
+			"tijd"
+			"dag"
+			"zin"
+			"ochtendeen";
+	}
+	.foto{
+		width: 80%;
+	}
+
+	#titel{
+		font-size: 20px;
+		width: 85%;
+		padding: 2.5%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin: auto;
+		border-radius: 5px;
+		border:none; 
+	}
+
+	.hoi{
+		font-size: 40px;
+	}
+	.time{
+		font-size: 125px;
+	}
+	.dag{
+		font-size: 30px;
+		margin-top: -2.5%;
+	}
+}
+
+@media only screen and (min-width: 725px) {
+	.container{
+		grid-template-areas:
+			"groet groet groet"
+			"tijd tijd tijd"
+			"dag dag dag"
+			"zin zin zin"
+			"ochtendeen";
+	}
+	#titel{
+		font-size: 20px;
+		width: 91.5%;
+		padding: 2%;
+		margin-left: 2.25%;
+		margin-right: 2.25%;
+		margin: auto;
+		border-radius: 5px;
+		border:none; 
+	}
+
+
+	.hoi{
+		font-size: 45px;
+	}
+	.time{
+		font-size: 200px;
+	}
+	.dag{
+		font-size: 35px;
+		margin-top: -2.5%;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.container{
+		grid-template-areas:
+			"groet groet groet"
+			"tijd tijd tijd"
+			"dag dag dag"
+			"zin zin zin"
+			"ochtendeen ";
+	}
+	.foto{
+		width: 80%;
+	}
+
+	.hoi{
+		font-size: 80px;
+	}
+	.time{
+		font-size: 250px;
+	}
+	.dag{
+		font-size: 40px;
+		margin-top: -5%;
+	}
+}
+
+
+
